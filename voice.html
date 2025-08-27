@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Speak Your Text</title>
+    <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+    <div class="page">
+            <nav class="navbar">
+        <div class="navbar__container">
+            <a href="#" id="navbar__logo"></a>
+            <div class="navbar__toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="navbar__menu">
+                <li .navbar__item> <a href="./index.html" class="navbar__links">Home</a></li>
+                <li .navbar__item> <a href="./about.html" class="navbar__links">About Us</a></li>
+                <li .navbar__btn> <a href="./voice.html" class="button">Start Using</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="main">
+        <div class="main__container">
+            <div class="main__contant">
+                <h2>Speak Your Text</h2>
+                <p>
+Enter any English sentence in the box below, and our text-to-speech tool will instantly read it aloud for you with clear and natural pronunciation. It's fast, simple, and completely browser-based — no downloads or installations needed.
+</p>
+
+                
+            </div>
+            <div class="main__img--container"><img id="main__img" src="./images/Gemini_Generated_Image_d9mhwbd9mhwbd9mh.png         " alt="pic"></div>
+        </div>
+    </div>
+
+    <div class="tabs">
+    <button class="tab active" data-tab="tts">TTS</button>
+    <button class="tab" data-tab="translate">Translate</button>
+</div>
+
+
+<div class="tab-content active" id="tts">
+   <div class="voice__container">
+     <h2>🔊 Text to Speech</h2>
+    <textarea id="text" rows="4" placeholder="Enter Your Text Here..."></textarea>
+    <br>
+    <button id="playBtn">▶ Start </button>
+    <button id="pauseBtn">⏸ Pause</button>
+    <button id="resumeBtn">▶ Play</button>
+    <button id="stopBtn">⏹ Stop</button>
+   </div>
+</div>
+
+<div class="tab-content" id="translate">
+    <div class="voice__container">
+    <h2>🔄️ Translate</h2>
+    <textarea id="translateInput" placeholder="Enter text to translate..."></textarea>
+    <br>
+    <button id="translateBtn">Translate</button>
+    <div id="translateOutputContainer" style="display: none;">
+        <textarea id="translateOutput" readonly></textarea>
+    </div>
+    </div>
+</div>
+
+    <script src="./app.js"></script>
+</body>
+</html>
