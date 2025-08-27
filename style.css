@@ -580,17 +580,17 @@
     }
 
 #text {
-        width: 17rem;
+        width: 15rem;
         font-size: 1rem;
 }
 
 #translateInput {
-    width: 17rem;
+    width: 15rem;
     font-size: 1rem;
 }
 
 #translateOutput {
-    width: 17rem;
+    width: 15rem;
     font-size: 1rem;
     direction: rtl;
     margin-top: 5px;
@@ -738,4 +738,5 @@
 .tab-content.active {
     display: block;
 }
+
 
